@@ -65,7 +65,7 @@ const res = await fetch(`https://delegated-ipfs.dev/routing/v1/ipns/${name}`, {
 });
 
 if (res.ok) {
-  console.log(`${cid} → ${name}`);
+  console.log(`https://ipfs.io/ipns/${name}`);
 } else {
   console.error(`${res.status} ${await res.text()}`);
   process.exit(1);

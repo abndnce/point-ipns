@@ -1,7 +1,7 @@
 {
   "name": "point-ipns",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Point to a CID with IPNS",
   "license": "MIT",
   "bin": {
