@@ -12,7 +12,7 @@ const keyHex = process.env.IPNS_KEY;
 const cid = process.argv[2];
 
 if (!keyHex) {
-  console.error('Set IPNS_KEY env var (hex-encoded Ed25519 private key)');
+  console.error('Set IPNS_KEY env var (32 hex bytes)');
   process.exit(1);
 }
 if (!cid) {
