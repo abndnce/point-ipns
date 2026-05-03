@@ -1,0 +1,31 @@
+{
+  "name": "point-ipns",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Point to a CID with IPNS",
+  "license": "MIT",
+  "bin": {
+    "point-ipns": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepublishOnly": "pnpm run build",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "prettier": "^3.8.3",
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@libp2p/crypto": "^5.1.17",
+    "@libp2p/peer-id": "^6.0.8",
+    "ipns": "^10.1.6",
+    "multiformats": "^13.4.2"
+  }
+}
